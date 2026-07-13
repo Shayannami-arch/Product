@@ -1,13 +1,13 @@
 [app]
 
 title = ProductApp
-package.name = productapp
+package.name = productappfinal
 package.domain = org.productapp
 
 source.dir = .
 source.include_exts = py,png,jpg,jpeg,kv,json,txt,dat,db,sqlite,ttf
 
-version = 1.0
+version = 1.1
 
 requirements = python3,kivy
 
@@ -18,7 +18,7 @@ icon.filename =
 
 android.permissions =
 android.api = 35
-android.minapi = 24
+android.minapi = 23
 android.ndk = 28c
 android.accept_sdk_license = True
 
