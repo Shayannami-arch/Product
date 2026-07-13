@@ -1,1 +1,37 @@
 
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    container:
+      image: kivy/buildozer:latest
+      env:
+        HOME: /home/user
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare folders
+        run: |
+          mkdir -p /home/user/.buildozer
+          mkdir -p bin
+          chmod -R u+rwX /home/user
+          chmod -R u+rwX .
+
+      - name: Show project files
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 4 -type f
+          buildozer --version
+          python3 --version || python --version
