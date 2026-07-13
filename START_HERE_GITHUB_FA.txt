@@ -1,0 +1,11 @@
+شروع سریع:
+
+داخل Repository باید این‌ها را ببینی:
+
+main.py
+buildozer.spec
+requirements.txt
+icon.png
+.github/workflows/build-apk.yml
+
+این نسخه دیگر به پوشه‌های model و cotroller نیاز ندارد.

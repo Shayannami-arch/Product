@@ -1,0 +1,14 @@
+نتیجه تست ساخت APK داخل محیط ChatGPT:
+
+من ساخت APK را واقعاً اجرا کردم، اما محیط داخلی ChatGPT دسترسی مستقیم به GitHub ندارد و Buildozer نتوانست python-for-android را دانلود کند.
+خطای واقعی:
+
+fatal: unable to access 'https://github.com/kivy/python-for-android.git/': Could not resolve host: github.com
+
+بنابراین در این محیط امکان ساخت مستقیم فایل APK وجود ندارد.
+این پروژه آماده است که داخل GitHub Actions ساخته شود.
+فایل‌های اصلاح‌شده:
+- buildozer.spec
+- .github/workflows/build-apk.yml
+
+اگر GitHub Actions اجرا شود و Artifact چند مگابایت باشد، فایل APK ساخته شده است.
