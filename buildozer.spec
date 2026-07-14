@@ -1,13 +1,13 @@
 [app]
 
 title = ProductApp
-package.name = productappfinal
+package.name = productappfinal2
 package.domain = org.productapp
 
 source.dir = .
 source.include_exts = py,png,jpg,jpeg,kv,json,txt,dat,db,sqlite,ttf
 
-version = 1.1
+version = 1.2
 
 requirements = python3,kivy
 
@@ -16,7 +16,10 @@ fullscreen = 0
 
 icon.filename =
 
-android.permissions =
+# IMPORTANT: Do not leave this empty.
+# Empty value generated invalid permission: android.permission.
+android.permissions = INTERNET
+
 android.api = 35
 android.minapi = 24
 android.ndk = 28c
