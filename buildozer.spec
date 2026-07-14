@@ -9,7 +9,7 @@ source.include_exts = py,png,jpg,jpeg,kv,json,txt,dat,db,sqlite,ttf
 
 version = 1.2
 
-requirements = python3,kivy
+requirements = python3,kivy,arabic-reshaper,python-bidi
 
 orientation = portrait
 fullscreen = 0
